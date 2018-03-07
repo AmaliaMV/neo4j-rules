@@ -1,0 +1,7 @@
+import rules.GeneralRule
+
+model {
+    List<GeneralRule> rules = GeneralRule.getAll()
+}
+
+json tmpl.'/rules/rule'("rule", rules)

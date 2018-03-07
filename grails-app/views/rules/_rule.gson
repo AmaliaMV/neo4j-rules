@@ -1,0 +1,12 @@
+import rules.GeneralRule
+
+model {
+    GeneralRule rule
+}
+
+json {
+    id rule.id
+    name rule.name
+    'class' rule.class.toString()
+    actions tmpl.'/rules/action'('action', rule.actions)
+}

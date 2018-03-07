@@ -1,0 +1,10 @@
+import rules.GeneralAction
+
+model {
+    GeneralAction action
+}
+
+json {
+    name action.name
+    'class' action.class.toString()
+}
